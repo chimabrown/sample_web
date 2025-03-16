@@ -1,0 +1,174 @@
+/* *{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./pexels-uvarova-339835.jpg");
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    border-bottom: .1rem solid #000;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+}
+nav li{
+    flex: 1 1 auto;
+    padding: 2rem 10rem ;
+    
+}
+
+i,.logo{
+    font-size: 3.2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+.logo a{
+    font-size: 4rem;
+    color: #c00303;
+    text-shadow: 0 .2rem 3rem rgba(23, 22, 22, 0.5);
+    padding: 1rem;
+}
+.hamburger{
+    text-align: end;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+form{
+    width: 50%;
+    height: 10rem;
+    border: .3rem solid red;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+.searchbar label,input,button{
+    font-size: 4rem;
+    padding: 1rem;
+}
+label{
+    background-color: rgb(30, 255, 0);
+    color: #fff;
+    flex-basis: 16em;
+}
+button{
+    flex-basis: 36em;
+}
+button{
+    flex-basis: 10em;
+} */
+
+
+/* Global Styles */
+:root {
+    --primary-color: #c00303;
+    --label-bg: #1eff00;
+    --btn-bg: #d100a1;
+    --text-color: white;
+    --nav-border: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    background: url("pexels-uvarova-339835.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+header {
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 0.1rem solid var(--nav-border);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    list-style: none;
+}
+
+.logo a {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-shadow: 0 0.2rem 3rem rgba(23, 22, 22, 0.5);
+    text-decoration: none;
+}
+
+.hamburger a {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+/* Search Bar */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    width: 50%;
+    max-width: 600px;
+    border: 0.3rem solid var(--primary-color);
+    overflow: hidden;
+}
+
+.search-label {
+    background: var(--label-bg);
+    color: var(--text-color);
+    padding: 1rem;
+    font-size: 2rem;
+    flex: 1.5;
+    text-align: center;
+}
+
+.search-input {
+    flex: 3;
+    padding: 1rem;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+}
+
+.search-btn {
+    flex: 1;
+    background: var(--btn-bg);
+    color: var(--text-color);
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background: #b3008c;
+}
+
